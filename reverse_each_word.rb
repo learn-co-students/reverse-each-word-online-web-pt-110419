@@ -1,9 +1,10 @@
-require 'pry'
+#require 'pry'
 def reverse_each_word(sentence1)
-  binding.pry
+  #binding.pry
   # "Hello there, and how are you?"
   f = []
-  sentence1.split('')
- f << sentence1.reverse
+  sentence1.split(' ').collect do |x|
+ f << x.reverse
 end
-
+f.join(" ")
+end
